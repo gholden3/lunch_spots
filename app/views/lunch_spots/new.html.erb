@@ -1,0 +1,12 @@
+<%= form_for(@lunch_spot) do |spot| %>
+  <%= spot.label :name %>
+  <%= spot.text_field :name %>
+
+  <%= spot.label :description %>
+  <%= spot.text_field :description %>
+
+  <%= spot.label :rating %>
+  <%= spot.text_field :rating %>
+
+  <button type="submit">Submit</button>
+<% end %>

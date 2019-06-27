@@ -1,0 +1,10 @@
+# .pairs - configuration for 'git pair'
+pairs:
+  # <initials>: <Firstname> <Lastname>[; <email-id>]
+  gh: Gina Holden; gholden
+  sf: Serguei Filimonov; serguei
+email:
+  prefix: pair
+  domain: pivota.io
+  no_solo_prefix: true
+global: false  # Set to true for git-pair to change git configuration for all your projects

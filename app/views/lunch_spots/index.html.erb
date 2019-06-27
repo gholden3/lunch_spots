@@ -1,0 +1,26 @@
+<h1>Lunch Spots</h1>
+
+<table>
+<thead>
+<tr>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Rating</th>
+    <th colspan="3"></th>
+</tr>
+</thead>
+<tbody>
+<% @lunch_spots.each do |lunch_spot| %>
+ <tr>
+    <td><%= lunch_spot.name%></td>
+    <td><%= lunch_spot.description%></td>
+    <td><%= lunch_spot.rating%></td>
+ </tr>   
+<% end %>
+</tbody>
+</table>
+
+<br>
+
+<%= link_to "New Spot", new_lunch_spot_url %>
+
