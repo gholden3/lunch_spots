@@ -11,9 +11,9 @@ class LunchSpotsController < ApplicationController
   def create
     @lunch_spot = LunchSpot.new(lunch_spot_params)
     if @lunch_spot.save
-      redirect_to lunch_spots_path, alert: 'Spot created successfully.'
+      redirect_to lunch_spots_path
     else
-      redirect_to new_lunch_spot_path, alert: 'Error creating lunch spot.'
+      render :new
     end
   end
 

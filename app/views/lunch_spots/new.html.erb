@@ -1,4 +1,11 @@
-<%= form_for(@lunch_spot) do |spot| %>
+<% if @lunch_spot.errors.any? %>
+  <% @lunch_spot.errors.full_messages.each do |message| %>
+    <div>Error: <%= message %></div>
+  <% end %>
+<% end %>
+<br/>
+<%= form_for @lunch_spot do |spot| %>
+
   <%= spot.label :name %>
   <%= spot.text_field :name %>
 
