@@ -1,0 +1,10 @@
+<%= form_for @lunch_spot do |spot| %>
+
+  <%= spot.label :name %>
+  <%= spot.text_field :name %>
+  <%= spot.label :description %>
+  <%= spot.text_field :description %>
+
+  <%= submit_tag(value = "Save changes", options = {}) %>
+<!--  <button type="submit">Submit</button>-->
+<% end %>

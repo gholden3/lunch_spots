@@ -5,7 +5,16 @@ class LunchSpotsController < ApplicationController
     @lunch_spots = LunchSpot.all
   end
 
+  def edit
+    @lunch_spot = LunchSpot.find(params[:id])
+  end
+
   def update
+    redirect_to lunch_spots_path
+  end
+
+  def new
+    @lunch_spot = LunchSpot.new
   end
 
   def create
@@ -15,10 +24,6 @@ class LunchSpotsController < ApplicationController
     else
       render :new
     end
-  end
-
-  def new
-    @lunch_spot = LunchSpot.new
   end
 
 

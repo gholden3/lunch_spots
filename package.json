@@ -1,5 +1,7 @@
 {
   "name": "lunch_spots",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "chromedriver": "^75.0.0"
+  }
 }
